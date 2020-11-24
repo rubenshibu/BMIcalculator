@@ -1,4 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class InputPage extends StatefulWidget {
   @override
@@ -21,11 +23,44 @@ class _InputPageState extends State<InputPage> {
                   Expanded(
                     child: ReuseableContainer(
                       colour: Color(0xff1d1e33),
+                      cardChild: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          Icon(
+                            FontAwesomeIcons.mars,
+                            size: 80.0,
+                          ),
+                          SizedBox(
+                            height: 15.0,
+                          ),
+                          Text("MALE",style: TextStyle(
+                            fontSize: 18.0,
+                            color: Color(0xff8D8E98),
+                          ),),
+                        ],
+                      ),
                     ),
                   ),
                   Expanded(
                     child: ReuseableContainer(
                       colour: Color(0xff1d1e33),
+                      cardChild: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          Icon(
+                            FontAwesomeIcons.venus,
+                            size: 80.0,
+                          ),
+                          SizedBox(
+                            height: 15.0,
+                          ),
+                          Text("FEMALE",
+                          style: TextStyle(
+                            fontSize: 18.0,
+                            color: Color(0xff8D8E98),
+                          ),),
+                        ],
+                      ),
                     ),
                   )
                 ],
@@ -58,7 +93,6 @@ class _InputPageState extends State<InputPage> {
                   Container(
                     color: Color(0xffEB1555),
                     margin: EdgeInsets.only(top: 10.0),
-                    width: double.infinity,
                     height: 80.0,
                   ),
                 ],
